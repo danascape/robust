@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.dsi.robust.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fridgeFragment"
+            app:destination="@id/fridgeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="dev.dsi.robust.ui.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="dev.dsi.robust.ui.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="dev.dsi.robust.ui.TipsFragment"
+        android:label="TipsFragment" />
+    <fragment
+        android:id="@+id/fridgeFragment"
+        android:name="dev.dsi.robust.ui.FridgeFragment"
+        android:label="FridgeFragment" />
+</navigation>
