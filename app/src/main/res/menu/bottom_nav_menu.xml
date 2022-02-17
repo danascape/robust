@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fridgeFragment"
+        android:title="Fridge"
+        android:icon="@drawable/fridge_icon"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/cartFragment"
+        android:title="Cart"
+        android:icon="@drawable/cart_icon"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/tipsFragment"
+        android:title="Tips"
+        android:icon="@drawable/tips_icon"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="About"
+        android:icon="@drawable/about_icon"
+        android:iconTint="@color/black"/>
+</menu>
