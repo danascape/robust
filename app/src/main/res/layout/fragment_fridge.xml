@@ -34,15 +34,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="12dp"
-            android:text="No subject added"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -54,7 +45,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recycler_view_item">
 
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>

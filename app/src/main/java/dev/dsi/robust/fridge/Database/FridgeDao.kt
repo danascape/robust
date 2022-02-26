@@ -7,15 +7,15 @@ import androidx.room.*
 interface FridgeDao {
 
     @Query("SELECT * FROM fridge_items")
-    fun getAllFridgeItems(): LiveData<List<Fridge>>
+    fun getAllFridgeItems(): LiveData<List<FridgeItems>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(item: Fridge)
+    suspend fun insert(item: FridgeItems)
 
     @Delete
-    suspend fun delete(item: Fridge)
+    suspend fun delete(item: FridgeItems)
 
     @Update
-    suspend fun update(item: Fridge)
+    suspend fun update(item: FridgeItems)
 
 }
