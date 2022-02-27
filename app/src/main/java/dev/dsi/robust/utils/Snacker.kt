@@ -1,4 +1,4 @@
-package dev.dsi.robust.fridge
+package dev.dsi.robust.utils
 
 import android.view.View
 import androidx.core.content.ContextCompat

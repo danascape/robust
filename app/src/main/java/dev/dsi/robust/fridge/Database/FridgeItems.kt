@@ -21,7 +21,10 @@ data class FridgeItems (
     var itemQuantity:Long=0L,
 
     @ColumnInfo(name="item_tag")
-    var itemTag:String=""
+    var itemTag:String="",
+
+    @ColumnInfo(name = "bg_color")
+    var bg: Int = 0
 
 )
 

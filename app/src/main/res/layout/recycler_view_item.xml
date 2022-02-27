@@ -9,11 +9,10 @@
     android:layout_marginEnd="8dp"
     android:elevation="16dp"
     android:padding="5dp"
-    android:backgroundTint="#F1F1F1"
     app:cardCornerRadius="10dp">
 
     <RelativeLayout
-        android:id="@+id/attendance_card"
+        android:id="@+id/fridgeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
@@ -22,10 +21,11 @@
             android:id="@+id/product_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:layout_alignStart="@+id/expiry"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/sofiaprosoftbold"
             android:text="Butter"
             android:textColor="#292929"
             android:textSize="28sp" />
@@ -57,6 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:text="0"
+                    android:fontFamily="@font/sofiaprosoftregular"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -77,6 +78,7 @@
             android:layout_below="@+id/product_name"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/sofiaprosoftmedium"
             android:text="Expires in 1 month"
             android:textColor="#494949"
             android:textSize="18sp" />
@@ -89,13 +91,15 @@
             android:layout_marginRight="40dp"
             app:cardCornerRadius="13dp"
             app:strokeWidth="1dp"
-            app:strokeColor="#FF6060">
+            app:strokeColor="#6082FF">
             <TextView
                 android:id="@+id/tag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="dairy"
-                android:background="#FFE8E8"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sofiaprosoftmedium"
+                android:background="#8CDCFF"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="1.5dp"
                 android:textSize="12sp"/>

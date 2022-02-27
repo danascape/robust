@@ -17,6 +17,8 @@
     <color name="blueMain">#0668E1</color>
     <color name="lightBlue">#C3F1FF</color>
     <color name="lightMain">#61A3F3</color>
+
+    <!--Card Colors-->
     <color name="cardColor1">#C7A7F1</color>
     <color name="cardColor2">#EAE1D2</color>
     <color name="cardColor3">#BECFFB</color>
@@ -33,6 +35,7 @@
     <color name="cardColor14">#FBA3DE</color>
     <color name="cardColor15">#D38F77FB</color>
     <color name="dark">#171717</color>
+
     <!--SnackBar Colors-->
     <color name="colorSuccess">#4caf50</color>
     <color name="colorError">#d32f2f</color>

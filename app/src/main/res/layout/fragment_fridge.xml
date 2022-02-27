@@ -9,23 +9,23 @@
     tools:context=".ui.FridgeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+        android:id="@+id/appBarLayoutFridge"
         android:layout_width="match_parent"
-        android:background="@color/purple_500"
+        android:background="@color/material_blue"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbarDashboard"
+            android:id="@+id/toolbarDashboardFridge"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:title="Fridge"
             app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
             app:titleTextColor="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:navigationIcon="?attr/homeAsUpIndicator"/>
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 

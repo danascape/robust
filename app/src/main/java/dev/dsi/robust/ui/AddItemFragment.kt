@@ -1,7 +1,6 @@
 package dev.dsi.robust.ui
 
 import android.os.Bundle
-import android.provider.SyncStateContract
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,8 @@ import dev.dsi.robust.R
 import dev.dsi.robust.databinding.FragmentAddItemBinding
 import dev.dsi.robust.fridge.Database.FridgeItems
 import dev.dsi.robust.fridge.Database.FridgeViewModel
-import dev.dsi.robust.fridge.Snacker
+import dev.dsi.robust.utils.Constants
+import dev.dsi.robust.utils.Snacker
 
 @Suppress("DEPRECATION")
 class AddItemFragment : Fragment() {
@@ -30,16 +30,35 @@ class AddItemFragment : Fragment() {
 
         binding.fabCheck.setOnClickListener {
             fridgeViewmodel = ViewModelProviders.of(this).get(FridgeViewModel::class.java)
+
+
             if(binding.itemNameEditText.text.toString() == ""){
-                Snacker(it,"This Field can't be empty").error()
+                Snacker(it,"Enter your item name").error()
             }
+
+            else if(binding.itemCountEditText.text.toString() == ""){
+                Snacker(it, "Enter the quantity you want to store").error()
+            }
+
+            else if(binding.itemExpiryEditText.text.toString() == ""){
+                Snacker(it, "Enter the expiry in number of days").error()
+            }
+
+            else if(binding.itemCountEditText.text.toString() == ""){
+                Snacker(it, "Enter the quantity you want to store").error()
+            }
+
+            else if(binding.itemTag.selectedItem.toString() == ""){
+                Snacker(it, "Please select a tag").error()
+            }
+
             else {
                 val fridge = FridgeItems(
                     itemName = binding.itemNameEditText.text.toString(),
                     itemExpiry = binding.itemExpiryEditText.text.toString().toLong(),
                     itemQuantity = binding.itemCountEditText.text.toString().toLong(),
-                    itemTag = binding.itemTag.selectedItem.toString()
-
+                    itemTag = binding.itemTag.selectedItem.toString(),
+                    bg = Constants.getRandomCardColor()
                 )
                 fridge.id = System.currentTimeMillis().toInt()
                 fridgeViewmodel.insert(fridge)

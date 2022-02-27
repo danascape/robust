@@ -7,6 +7,27 @@
     tools:context=".ui.AddItemFragment"
     android:orientation="vertical">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutFridge"
+        android:layout_width="match_parent"
+        android:background="@color/material_blue"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDashboardFridge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Add your item"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/itemNameTextInput"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -46,7 +67,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:hint="Add expiry"
+        android:hint="Expiry in days"
         android:forceDarkAllowed="false"
         app:hintTextColor="@color/dark"
         >
@@ -73,7 +94,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="32dp"
-        android:hint="Add item count"
+        android:hint="Quantity"
         android:forceDarkAllowed="false"
         app:hintTextColor="@color/dark"
         >
@@ -99,7 +120,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="30dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="@color/cardColor4">
+        android:backgroundTint="#EBFFEB">
 
     <Spinner
         android:id="@+id/itemTag"
