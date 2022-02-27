@@ -1,20 +1,34 @@
 package dev.dsi.robust.fridge.Database
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
-class FridgeViewModel (private val repository: FridgeRepository):ViewModel(){
+class FridgeViewModel (application: Application):AndroidViewModel(Application()){
 
-    fun insert(items:FridgeItems)=GlobalScope.launch {
+    private var parentJob = Job()
+    private val scope = CoroutineScope(parentJob + Dispatchers.Main)
+
+    private val repository: FridgeRepository
+    val allLists: LiveData<List<FridgeItems>>
+
+    init {
+        val fridgeDao = FridgeDatabase.getDatabase(application).getFridgeDao()
+        repository = FridgeRepository(fridgeDao)
+        allLists = getAllFridgeItems()
+    }
+
+    fun insert(items:FridgeItems)=scope.launch {
         repository.insert(items)
     }
 
-    fun delete(items:FridgeItems)=GlobalScope.launch {
+    fun delete(items:FridgeItems)=scope.launch {
         repository.delete(items)
     }
 
-    fun update(items:FridgeItems)=GlobalScope.launch {
+    fun update(items:FridgeItems)=scope.launch {
         repository.update(items)
     }
 

@@ -38,5 +38,19 @@
     <fragment
         android:id="@+id/fridgeFragment"
         android:name="dev.dsi.robust.ui.FridgeFragment"
-        android:label="FridgeFragment" />
+        android:label="FridgeFragment" >
+        <action
+            android:id="@+id/action_fridgeFragment_to_addItemFragment"
+            app:destination="@+id/addItemFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="dev.dsi.robust.ui.AddItemFragment"
+        android:label="AddItemFragment" >
+        <action
+            android:id="@+id/action_addItemFragment_to_fridgeFragment"
+            app:destination="@+id/fridgeFragment"/>
+    </fragment>
+
 </navigation>

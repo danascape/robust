@@ -2,4 +2,11 @@
     <string name="app_name">robust</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Tag">
+        <item>Tag</item>
+        <item>Dairy</item>
+        <item>Veggies</item>
+        <item>Meat</item>
+        <item>Pulses</item>
+    </string-array>
 </resources>

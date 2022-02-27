@@ -12,20 +12,22 @@ abstract class FridgeDatabase : RoomDatabase() {
 
     companion object {
         @Volatile
-        private var instance: FridgeDatabase? = null
-        private val LOCK = Any()
+        private var INSTANCE: FridgeDatabase? = null
 
-        operator fun invoke(context: Context) = instance ?: synchronized(LOCK) {
-            instance ?: createDatabase(context).also {
-                instance = it
+        fun getDatabase(context: Context): FridgeDatabase {
+            val tempInstance = INSTANCE
+            if (tempInstance != null) {
+                return tempInstance
+            }
+            synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    FridgeDatabase::class.java,
+                    "Fridge_Database"
+                ).build()
+                INSTANCE = instance
+                return instance
             }
         }
-
-        private fun createDatabase(context: Context) =
-            Room.databaseBuilder(
-                context.applicationContext,
-                FridgeDatabase::class.java,
-                "Fridge.db"
-            ).build()
     }
 }

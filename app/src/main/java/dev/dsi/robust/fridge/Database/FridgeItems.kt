@@ -6,22 +6,22 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 @Entity(tableName = "fridge_items")
-class FridgeItems: Serializable {
+data class FridgeItems (
 
     @PrimaryKey(autoGenerate = true)
-    var id: Int? = null
+    var id: Int? = null,
 
     @ColumnInfo(name="item_name")
-    var itemName:String?=null
+    var itemName:String="",
 
     @ColumnInfo(name="expiry")
-    var itemExpiry:Int?=null
+    var itemExpiry:Long=0L,
 
     @ColumnInfo(name="item_quantity")
-    var itemQuantity:Int?=null
+    var itemQuantity:Long=0L,
 
     @ColumnInfo(name="item_tag")
-    var itemTag:String?=null
+    var itemTag:String=""
 
-}
+)
 

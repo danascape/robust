@@ -1,10 +1,20 @@
 package dev.dsi.robust.fridge.Database
 
-class FridgeRepository(private val db: FridgeDatabase) {
+import androidx.annotation.WorkerThread
+import androidx.lifecycle.LiveData
 
-    suspend fun insert(items: FridgeItems) = db.getFridgeDao().insert(items)
-    suspend fun delete(items: FridgeItems) = db.getFridgeDao().delete(items)
-    suspend fun update(items: FridgeItems) = db.getFridgeDao().update(items)
+class FridgeRepository(private val fridgeDao: FridgeDao) {
 
-    fun getAllItems() = db.getFridgeDao().getAllFridgeItems()
+//    val alllists:LiveData<List<FridgeItems>>=getAllItems()
+
+    @WorkerThread
+    suspend fun insert(items: FridgeItems) = fridgeDao.insert(items)
+
+    @WorkerThread
+    suspend fun delete(items: FridgeItems) = fridgeDao.delete(items)
+
+    @WorkerThread
+    suspend fun update(items: FridgeItems) = fridgeDao.update(items)
+
+    fun getAllItems() = fridgeDao.getAllFridgeItems()
 }
