@@ -94,14 +94,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/textGithub"
+                    android:id="@+id/textGithubOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:text="Github" />
 
                 <Button
-                    android:id="@+id/textLinkedIn"
+                    android:id="@+id/textLinkedInOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -225,14 +225,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/textGithub1"
+                    android:id="@+id/textGithubThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Github"
                     android:layout_marginRight="8dp" />
 
                 <Button
-                    android:id="@+id/textLinkedIn1"
+                    android:id="@+id/textLinkedInThree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"
@@ -290,17 +290,17 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/textGithub2"
+                    android:id="@+id/textGithubFour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GMail"
+                    android:text="Github"
                     android:layout_marginRight="8dp" />
 
                 <Button
-                    android:id="@+id/textLinkedIn2"
+                    android:id="@+id/textGmailOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LinkedIn"
+                    android:text="Gmail"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
@@ -355,14 +355,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/textGithub3"
+                    android:id="@+id/textGMailTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GMail"
                     android:layout_marginRight="8dp" />
 
                 <Button
-                    android:id="@+id/textLinkedIn3"
+                    android:id="@+id/textLinkedInFive"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"

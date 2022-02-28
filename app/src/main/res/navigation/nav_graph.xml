@@ -14,9 +14,6 @@
             android:id="@+id/action_homeFragment_to_fridgeFragment"
             app:destination="@id/fridgeFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_cartFragment"
-            app:destination="@id/cartFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_tipsFragment"
             app:destination="@id/tipsFragment" />
         <action
@@ -27,10 +24,6 @@
         android:id="@+id/aboutFragment"
         android:name="dev.dsi.robust.ui.AboutFragment"
         android:label="AboutFragment" />
-    <fragment
-        android:id="@+id/cartFragment"
-        android:name="dev.dsi.robust.ui.CartFragment"
-        android:label="CartFragment" />
     <fragment
         android:id="@+id/tipsFragment"
         android:name="dev.dsi.robust.ui.TipsFragment"
