@@ -18,19 +18,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_graph"
-            />
+            app:navGraph="@navigation/nav_graph" />
 
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
+        style="@style/Widget.App.BottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:backgroundTint="@color/white"
         app:itemIconTint="@color/black"
-        app:itemRippleColor="@color/material_red"
+        app:itemRippleColor="@color/material_blue"
         app:itemTextColor="@color/black"
         app:menu="@menu/bottom_nav_menu" />
 

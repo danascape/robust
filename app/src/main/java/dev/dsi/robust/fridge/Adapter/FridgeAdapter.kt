@@ -83,5 +83,16 @@ class FridgeAdapter(
 
     fun getList() = fridgeList
 
+    fun removeitem(position: Int) {
+        fridgeViewModel.delete(fridgeList[position])
+        notifyItemRemoved(position)
+    }
+
+    fun restoreItem(fridgeItems: FridgeItems, position: Int) {
+        fridgeList.add(position, fridgeItems)
+        notifyItemChanged(position)
+        fridgeViewModel.insert(fridgeItems)
+    }
+
 
 }

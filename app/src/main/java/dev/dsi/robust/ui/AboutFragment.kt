@@ -28,6 +28,9 @@ class AboutFragment : Fragment() {
     ): View? {
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
 
+        binding.toolbarDashboardFridge.setNavigationOnClickListener {
+            activity?.onBackPressed()
+        }
         //Madhur
         binding.textGithubOne.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)

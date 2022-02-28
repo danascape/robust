@@ -28,6 +28,10 @@ class AddItemFragment : Fragment() {
     ): View? {
         _binding = FragmentAddItemBinding.inflate(inflater, container, false)
 
+        binding.toolbarDashboardFridge.setNavigationOnClickListener {
+            activity?.onBackPressed()
+        }
+
         binding.fabCheck.setOnClickListener {
             fridgeViewmodel = ViewModelProviders.of(this).get(FridgeViewModel::class.java)
 

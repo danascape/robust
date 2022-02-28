@@ -10,8 +10,7 @@
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayoutAbout"
@@ -98,6 +97,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:text="Github" />
 
                 <Button
@@ -105,6 +106,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:text="LinkedIn" />
             </LinearLayout>
 
@@ -164,6 +167,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Github"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginRight="8dp" />
 
                 <Button
@@ -171,6 +176,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
@@ -229,6 +236,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Github"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginRight="8dp" />
 
                 <Button
@@ -236,6 +245,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
@@ -294,6 +305,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Github"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginRight="8dp" />
 
                 <Button
@@ -301,6 +314,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Gmail"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
@@ -359,6 +374,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GMail"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginRight="8dp" />
 
                 <Button
@@ -366,6 +383,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
@@ -385,7 +404,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:foreground="@color/material_blue"
+            android:foreground="@drawable/maithri"
             android:layout_gravity="center"
             app:cardCornerRadius="100dp"
             android:outlineAmbientShadowColor="#00171717"
@@ -424,6 +443,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GMail"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginRight="8dp" />
 
                 <Button
@@ -431,6 +452,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="LinkedIn"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
                     android:layout_marginLeft="8dp"/>
             </LinearLayout>
 
