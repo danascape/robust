@@ -67,6 +67,7 @@
             android:layout_marginLeft="50dp"
             android:orientation="vertical">
 
+
             <TextView
                 android:id="@+id/product_name"
                 android:layout_width="wrap_content"
@@ -121,7 +122,10 @@
                 android:background="#8CDCFF"
                 android:fontFamily="@font/sofiaprosoftmedium"
                 android:paddingHorizontal="10dp"
-                android:paddingVertical="2.5dp"
+                android:paddingVertical="3dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
                 android:text="dairy"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
