@@ -6,10 +6,13 @@
     <string-array name="Tag">
         <item>Others</item>
         <item>Dairy</item>
+        <item>Fruits</item>
         <item>Veggies</item>
         <item>Meat</item>
         <item>Pulses</item>
         <item>Snacks</item>
         <item>Drinks</item>
     </string-array>
+
+    <item name="calendarCard" type="id">@id/calendarCard</item>
 </resources>
