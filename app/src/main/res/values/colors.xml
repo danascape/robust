@@ -42,6 +42,6 @@
     <color name="colorWarning">#ff9800</color>
 
     <color name="ColorFabRed">#ED514D</color>
-    <color name="gradient_start">#F4FFFA</color>
+    <color name="gradient_start">#E7FFF4</color>
     <color name="gradient_end">#A1FFC7</color>
 </resources>

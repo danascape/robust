@@ -11,7 +11,7 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        window.setStatusBarColor(this.getResources().getColor(R.color.gradient_start))
         binding = ActivitySplashBinding.inflate(layoutInflater)
         val view = binding.root
         Handler().postDelayed({
