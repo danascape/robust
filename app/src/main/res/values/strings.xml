@@ -12,4 +12,6 @@
         <item>Snacks</item>
         <item>Drinks</item>
     </string-array>
+
+    <item name="calendarCard" type="id">@id/calendarCard</item>
 </resources>

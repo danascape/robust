@@ -15,7 +15,7 @@ data class FridgeItems (
     var itemName:String="",
 
     @ColumnInfo(name="expiry")
-    var itemExpiry:Long=0L,
+    var itemExpiry:String = "",
 
     @ColumnInfo(name="item_quantity")
     var itemQuantity:Long=0L,

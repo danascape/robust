@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.AddItemFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.AddItemFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayoutFridge"
         android:layout_width="match_parent"
-        android:background="@color/material_blue"
         android:layout_height="wrap_content"
+        android:background="@color/material_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,11 +20,11 @@
             android:id="@+id/toolbarDashboardFridge"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="?attr/homeAsUpIndicator"
             app:title="Add your item"
             app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
-            app:titleTextColor="@color/white"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:navigationIcon="?attr/homeAsUpIndicator"/>
+            app:titleTextColor="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,8 +37,8 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="32dp"
-        android:hint="Add an item"
         android:forceDarkAllowed="false"
+        android:hint="Add an item"
         app:hintTextColor="@color/dark">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -58,77 +58,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/itemExpiryTextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/addHeading"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:hint="Expiry in days"
-        android:forceDarkAllowed="false"
-        app:hintTextColor="@color/dark"
-        >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/itemExpiryEditText"
-            android:layout_width="match_parent"
+        <androidx.cardview.widget.CardView
+            android:id="@id/calendarCard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/addHeading"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/material_red"
+            android:textAlignment="center"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/calendarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sofiaprosoftmedium"
+                android:text="Select Date"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemCountTextInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_weight="4"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:lines="1"
-            android:maxLength="22"
-            android:maxLines="1"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:layout_below="@+id/addHeading"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="32dp"
+            android:forceDarkAllowed="false"
+            android:hint="Quantity in units"
+            app:hintTextColor="@color/dark">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemCountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="22"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/itemCountTextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/addHeading"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="32dp"
-        android:hint="Quantity"
-        android:forceDarkAllowed="false"
-        app:hintTextColor="@color/dark"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/itemCountEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:lines="1"
-            android:maxLength="22"
-            android:maxLines="1"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="30dp"
-        app:cardCornerRadius="10dp"
-        android:backgroundTint="#EBFFEB">
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#EBFFEB"
+        app:cardCornerRadius="10dp">
 
-    <Spinner
-        android:id="@+id/itemTag"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:entries="@array/Tag"
-        android:spinnerMode="dropdown"
-        android:padding="5dp"/>
+        <Spinner
+            android:id="@+id/itemTag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/Tag"
+            android:padding="5dp"
+            android:spinnerMode="dropdown" />
 
     </androidx.cardview.widget.CardView>
 
@@ -139,8 +138,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="30dp"
-        android:src="@drawable/ic_baseline_check_24"
         android:backgroundTint="@color/ColorFabRed"
+        android:src="@drawable/ic_baseline_check_24"
         app:rippleColor="#FFA3A3"
         app:tint="@color/white" />
 

@@ -44,7 +44,7 @@ class FridgeAdapter(
         fun bind(item: FridgeItems, fridgeViewModel: FridgeViewModel, parentView: View) {
 
             binding.productName.text = item.itemName
-            binding.expiry.text = item.itemExpiry.toString()
+            binding.expiry.text = item.itemExpiry
             binding.tag.text = item.itemTag
             binding.quantity.text = item.itemQuantity.toString()
             binding.fridgeCard.background =ContextCompat.getDrawable(context, item.bg)

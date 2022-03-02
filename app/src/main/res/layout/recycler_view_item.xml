@@ -87,9 +87,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/sofiaprosoftmedium"
-                    android:text="Expires in "
+                    android:text="Expiry: "
                     android:textColor="#494949"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/expiry"
@@ -98,15 +98,8 @@
                     android:layout_below="@+id/product_name"
                     android:fontFamily="@font/sofiaprosoftmedium"
                     android:textColor="#494949"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/sofiaprosoftmedium"
-                    android:text=" days"
-                    android:textColor="#494949"
-                    android:textSize="18sp" />
             </LinearLayout>
 
         </LinearLayout>
