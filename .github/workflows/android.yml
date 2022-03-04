@@ -1,0 +1,23 @@
+name: "Android CI"
+
+on:
+  push:
+    branches: [ ci ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        uses: actions/checkout@v2
+      -
+        name: "Fetching Materials"
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      -
+        name: Construction
+        run: |
+            git clone -b master --single-branch https://github.com/danascape/robust.git Build
+            cd Build
+            ./gradlew build
