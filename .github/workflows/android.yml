@@ -18,6 +18,6 @@ jobs:
       -
         name: Construction
         run: |
-            git clone -b master --single-branch https://github.com/danascape/robust.git GitBuilds
+            git clone -b ci --single-branch https://github.com/danascape/robust.git GitBuilds
             cd GitBuilds
             ./gradlew build
