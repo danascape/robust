@@ -2,7 +2,7 @@ name: "Bob The Builder"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ ci ]
 
 jobs:
   build:
