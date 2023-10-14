@@ -28,6 +28,7 @@ class AboutFragment : Fragment() {
             openURL.data = Uri.parse("https://github.com/madhurmehta007")
             startActivity(openURL)
         }
+
         binding.textLinkedInOne.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/madhurmehta007/")
@@ -40,6 +41,7 @@ class AboutFragment : Fragment() {
             openURL.data = Uri.parse("https://github.com/debz-g")
             startActivity(openURL)
         }
+
         binding.textLinkedInTwo.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/debzexe/")
@@ -52,6 +54,7 @@ class AboutFragment : Fragment() {
             openURL.data = Uri.parse("https://github.com/danascape")
             startActivity(openURL)
         }
+
         binding.textLinkedInThree.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/saalim-quadri/")
@@ -64,6 +67,7 @@ class AboutFragment : Fragment() {
             openURL.data = Uri.parse("https://github.com/Manasvikashyap")
             startActivity(openURL)
         }
+
         binding.textGmailOne.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
             openURL.data = Uri.parse("mailto:manasvigk03@gmail.com")
@@ -76,6 +80,7 @@ class AboutFragment : Fragment() {
             openURL.data = Uri.parse("mailto:joyeeta2811.bais@gmail.com")
             startActivity(openURL)
         }
+
         binding.textLinkedInFive.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/joyeeta-bais-722727231")
@@ -86,6 +91,7 @@ class AboutFragment : Fragment() {
         binding.textGithub4.setOnClickListener {
             Toast.makeText(requireContext(),"Not yet updated", Toast.LENGTH_SHORT).show()
         }
+
         binding.textLinkedIn4.setOnClickListener {
             Toast.makeText(requireContext(),"Not yet updated", Toast.LENGTH_SHORT).show()
         }

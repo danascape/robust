@@ -5,8 +5,6 @@ import androidx.lifecycle.LiveData
 
 class FridgeRepository(private val fridgeDao: FridgeDao) {
 
-//    val alllists:LiveData<List<FridgeItems>>=getAllItems()
-
     @WorkerThread
     suspend fun insert(items: FridgeItems) = fridgeDao.insert(items)
 

@@ -1,12 +1,10 @@
 package dev.dsi.robust.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dev.dsi.robust.R
-import dev.dsi.robust.databinding.FragmentAboutBinding
+import androidx.fragment.app.Fragment
 import dev.dsi.robust.databinding.FragmentTipsBinding
 
 class TipsFragment : Fragment() {

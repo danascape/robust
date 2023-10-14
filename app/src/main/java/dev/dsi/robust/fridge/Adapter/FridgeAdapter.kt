@@ -3,23 +3,18 @@ package dev.dsi.robust.fridge.Adapter
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import dev.dsi.robust.databinding.RecyclerViewItemBinding
 import dev.dsi.robust.fridge.Database.FridgeItems
 import dev.dsi.robust.fridge.Database.FridgeViewModel
-import dev.dsi.robust.utils.Snacker
 
 class FridgeAdapter(
-    val fridgeViewModel: FridgeViewModel,
-    val parentView: View,
-    val activity: FragmentActivity?,
+    private val fridgeViewModel: FridgeViewModel
 ) :
     ListAdapter<FridgeItems, FridgeAdapter.FridgeViewHolder>(
         ListDiffCallbacks()
@@ -35,13 +30,15 @@ class FridgeAdapter(
 
     override fun onBindViewHolder(holder: FridgeViewHolder, position: Int) {
         val item = getItem(position)
-        holder.bind(item, fridgeViewModel, parentView)
+        holder.bind(item, fridgeViewModel)
     }
 
-    class FridgeViewHolder(val binding: RecyclerViewItemBinding, val context: Context) :
-        RecyclerView.ViewHolder(binding.root) {
+    class FridgeViewHolder(
+        private val binding: RecyclerViewItemBinding,
+        val context: Context
+    ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: FridgeItems, fridgeViewModel: FridgeViewModel, parentView: View) {
+        fun bind(item: FridgeItems, fridgeViewModel: FridgeViewModel) {
 
             binding.productName.text = item.itemName
             binding.expiry.text = item.itemExpiry
