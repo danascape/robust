@@ -24,65 +24,65 @@ class AboutFragment : Fragment() {
 
         //Madhur
         binding.textGithubOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/madhurmehta007")
             startActivity(openURL)
         }
 
         binding.textLinkedInOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/madhurmehta007/")
             startActivity(openURL)
         }
 
         //Debayan
         binding.textGithubTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/debz-g")
             startActivity(openURL)
         }
 
         binding.textLinkedInTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/debzexe/")
             startActivity(openURL)
         }
 
         //Saalim
         binding.textGithubThree.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/danascape")
             startActivity(openURL)
         }
 
         binding.textLinkedInThree.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/saalim-quadri/")
             startActivity(openURL)
         }
 
         //Manasvi
         binding.textGithubFour.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/Manasvikashyap")
             startActivity(openURL)
         }
 
         binding.textGmailOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("mailto:manasvigk03@gmail.com")
             startActivity(openURL)
         }
 
         //Joyeeta
         binding.textGMailTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("mailto:joyeeta2811.bais@gmail.com")
             startActivity(openURL)
         }
 
         binding.textLinkedInFive.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/joyeeta-bais-722727231")
             startActivity(openURL)
         }

@@ -1,7 +1,6 @@
 package dev.dsi.robust.fridge.Database
 
 import androidx.annotation.WorkerThread
-import androidx.lifecycle.LiveData
 
 class FridgeRepository(private val fridgeDao: FridgeDao) {
 
