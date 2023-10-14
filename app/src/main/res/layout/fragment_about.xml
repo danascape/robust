@@ -1,466 +1,465 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.AboutFragment">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayoutAbout"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/material_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbarDashboardFridge"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayoutAbout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:navigationIcon="?attr/homeAsUpIndicator"
-            app:title="Know Your Developers"
-            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
-            app:titleTextColor="@color/white" />
+            android:layout_height="56dp"
+            android:background="@color/material_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarDashboardFridge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:title="Know Your Developers"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:titleTextColor="@color/white" />
 
-    <TextView
-        android:id="@+id/robustText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/appBarLayoutAbout"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/sofiaprosoftmedium"
-        android:text="Developers:"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        </com.google.android.material.appbar.AppBarLayout>
 
-    //Madhur
-    <LinearLayout
-        android:id="@+id/aboutMadhur"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/robustText"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/madhur"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/robustText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/appBarLayoutAbout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sofiaprosoftmedium"
+            android:text="@string/developers"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Madhur -->
+        <LinearLayout
+            android:id="@+id/aboutMadhur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Madhur Mehta"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Lead Developer"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/madhur"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGithubOne"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:text="Github" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Madhur Mehta"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textLinkedInOne"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:text="LinkedIn" />
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Lead Developer"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGithubOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/github"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textLinkedInOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/linkedin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    //Debayan
-    <LinearLayout
-        android:id="@+id/aboutDebz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aboutMadhur"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/debz"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
+        <!-- Debayan -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/aboutDebz"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_below="@id/aboutMadhur"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Debayan Ghosh Dastider"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Co-Lead Developer"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/debz"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGithubTwo"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Github"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginRight="8dp" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Debayan Ghosh Dastider"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textLinkedInTwo"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LinkedIn"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginLeft="8dp"/>
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Co-Lead Developer"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGithubTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/github"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textLinkedInTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/linkedin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    //Saalim
-    <LinearLayout
-        android:id="@+id/aboutSaalim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aboutDebz"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/saalim"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
+        <!-- Saalim -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/aboutSaalim"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_below="@id/aboutDebz"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Saalim Quadri"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Developer"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/saalim"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGithubThree"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Github"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginRight="8dp" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Saalim Quadri"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textLinkedInThree"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LinkedIn"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginLeft="8dp"/>
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Developer"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGithubThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/github"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textLinkedInThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/linkedin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    //Manasvi
-    <LinearLayout
-        android:id="@+id/aboutManasvi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aboutSaalim"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/manasvi"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
+        <!-- Manasvi -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/aboutManasvi"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_below="@id/aboutSaalim"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Manasvi G Kashyap"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Team Member"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/manasvi"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGithubFour"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Github"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginRight="8dp" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Manasvi G Kashyap"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textGmailOne"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gmail"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginLeft="8dp"/>
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Team Member"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGithubFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/github"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textGmailOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/gmail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    //Joyeeta
-    <LinearLayout
-        android:id="@+id/aboutJoyeeta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aboutManasvi"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/joyeeta"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
+        <!-- Joyeeta -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/aboutJoyeeta"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_below="@id/aboutManasvi"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Joyeeta Bais"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Team Member"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/joyeeta"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGMailTwo"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GMail"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginRight="8dp" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Joyeeta Bais"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textLinkedInFive"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LinkedIn"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginLeft="8dp"/>
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Team Member"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGMailTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/gmail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textLinkedInFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/linkedin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    //Maithri
-    <LinearLayout
-        android:id="@+id/aboutMaithri"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aboutJoyeeta"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:foreground="@drawable/maithri"
-            android:layout_gravity="center"
-            app:cardCornerRadius="100dp"
-            android:outlineAmbientShadowColor="#00171717"
-            android:outlineSpotShadowColor="#00171717"/>
-
+        <!-- Maithri -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/aboutMaithri"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/robustText"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical">
+            android:layout_below="@id/aboutJoyeeta"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Maithri Shridhar Bhat"
-                android:textColor="@color/dark"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sofiaprosoftmedium"
-                android:text="Team Member"
-                android:textColor="@color/dark"
-                android:textSize="15sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/maithri"
+                android:outlineAmbientShadowColor="#00171717"
+                android:outlineSpotShadowColor="#00171717"
+                app:cardCornerRadius="100dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/textGithub4"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GMail"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginRight="8dp" />
+                    android:fontFamily="@font/sofiaprosoftbold"
+                    android:text="Maithri Shridhar Bhat"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/textLinkedIn4"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LinkedIn"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
-                    android:layout_marginLeft="8dp"/>
+                    android:fontFamily="@font/sofiaprosoftmedium"
+                    android:text="Team Member"
+                    android:textColor="@color/dark"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/textGithub4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/gmail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/textLinkedIn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/linkedin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
 
 </ScrollView>

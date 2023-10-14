@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="dev.dsi.robust.ui.AboutFragment"
-        android:label="AboutFragment" >
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about">
         <action
             android:id="@+id/action_aboutFragment_to_fridgeFragment"
             app:destination="@id/fridgeFragment"
@@ -18,7 +19,8 @@
     <fragment
         android:id="@+id/tipsFragment"
         android:name="dev.dsi.robust.ui.TipsFragment"
-        android:label="TipsFragment" >
+        android:label="TipsFragment"
+        tools:layout="@layout/fragment_tips">
         <action
             android:id="@+id/action_tipsFragment_to_fridgeFragment"
             app:destination="@id/fridgeFragment"
@@ -28,7 +30,8 @@
     <fragment
         android:id="@+id/fridgeFragment"
         android:name="dev.dsi.robust.ui.FridgeFragment"
-        android:label="FridgeFragment" >
+        android:label="FridgeFragment"
+        tools:layout="@layout/fragment_fridge">
         <action
             android:id="@+id/action_fridgeFragment_to_addItemFragment"
             app:destination="@+id/addItemFragment"
@@ -46,7 +49,8 @@
     <fragment
         android:id="@+id/addItemFragment"
         android:name="dev.dsi.robust.ui.AddItemFragment"
-        android:label="AddItemFragment" >
+        android:label="AddItemFragment"
+        tools:layout="@layout/fragment_add_item">
         <action
             android:id="@+id/action_addItemFragment_to_fridgeFragment"
             app:destination="@+id/fridgeFragment"

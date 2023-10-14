@@ -16,7 +16,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayoutAbout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:background="@color/material_blue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,11 +29,10 @@
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:navigationIcon="?attr/homeAsUpIndicator"
                 app:title="Tips"
-                app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:titleTextColor="@color/white" />
 
         </com.google.android.material.appbar.AppBarLayout>
-
 
         <TableLayout
             android:layout_width="match_parent"
@@ -42,19 +41,16 @@
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_gravity="center">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center|start"
-                    android:layout_weight="1"
-
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:background="#FFFFFF"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
@@ -73,7 +69,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Know where you want\nto go in life."
+                            android:text="@string/life_goal_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -81,26 +77,29 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/flag" />
+                            android:src="@drawable/flag"
+                            android:contentDescription="@string/life_goal_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Setting goals guides\nyour focus and helps you\nsustain that momentum in\nlife."
+                            android:text="@string/life_goal_desc"
                             android:textColor="#000000"
                             android:textSize="11sp"
                             android:textStyle="italic" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center|right"
-                    android:layout_margin="12dp"
-                    android:elevation="6dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="16dp"
                     android:layout_weight="1"
+                    android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
                     <LinearLayout
@@ -116,7 +115,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Healthy mind is a happy\nmind."
+                            android:text="@string/healthy_mind_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -125,37 +124,37 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/diet" />
+                            android:src="@drawable/diet"
+                            android:contentDescription="@string/healthy_mind_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Your diet definitely has a\nbig impact on your brain\nhealth."
+                            android:text="@string/healthy_mind_desc"
                             android:textColor="#000000"
                             android:textSize="11sp"
                             android:textStyle="italic" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </TableRow>
 
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_gravity="center|start"
                     android:layout_width="0dp"
-
+                    android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="16dp"
                     android:layout_weight="1"
-                    android:layout_margin="12dp"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -172,7 +171,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="75% of Brain is water -\nDrink a lot of it."
+                            android:text="@string/drink_water_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -181,13 +180,14 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/water" />
+                            android:src="@drawable/water"
+                            android:contentDescription="@string/drink_water_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Brain is strongly influenced\nby your hydration status."
+                            android:text="@string/drink_water_desc"
                             android:textColor="#000000"
                             android:textSize="11sp"
                             android:textStyle="italic" />
@@ -198,12 +198,12 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center|right"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -220,7 +220,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Have a sound sleep - 8\nhrs daily."
+                            android:text="@string/have_sound_sleep_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -228,37 +228,37 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/sleep" />
+                            android:src="@drawable/sleep"
+                            android:contentDescription="@string/have_a_sound_sleep_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="It strongly influences\nour capacity to recover both \nmentally and physically."
+                            android:text="@string/have_sound_sleep_desc"
                             android:textColor="#000000"
                             android:textSize="11sp"
                             android:textStyle="italic" />
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_gravity="center|start"
                     android:layout_width="0dp"
-
+                    android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="16dp"
                     android:layout_weight="1"
-                    android:layout_margin="12dp"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -275,7 +275,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Daily learn \nsomething new"
+                            android:text="@string/learn_something_new_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -284,27 +284,29 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/learn" />
+                            android:src="@drawable/learn"
+                            android:contentDescription="@string/learn_something_new_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Knowledge is power. \nWhen you have \nknowledge, you have \nthe power to \nachieve many things. "
+                            android:text="@string/learn_something_new_desc"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center|right"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -321,7 +323,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Exercise regularly."
+                            android:text="@string/exercise_regularly_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -330,35 +332,37 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/exercise" />
+                            android:src="@drawable/exercise"
+                            android:contentDescription="@string/exercise_regularly_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Mind are so closely \nlinked, when your \nbody feels better so, \ntoo, will your mind."
+                            android:text="@string/exercise_regularly_desc"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_gravity="center">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center|start"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -375,7 +379,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Don’t Procrastinate"
+                            android:text="@string/don_t_procrastinate"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -384,13 +388,14 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/deadline" />
+                            android:src="@drawable/deadline"
+                            android:contentDescription="@string/don_t_procrastinate_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="If you want to get \nmore out of your life\n, then stop dreaming \nand start taking \nactions today, not \ntomorrow."
+                            android:text="@string/don_t_procastinate_desc"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
@@ -399,12 +404,12 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center|right"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -421,7 +426,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Have Positive Attitude"
+                            android:text="@string/have_positive_attitude_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -430,35 +435,37 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/positive" />
+                            android:src="@drawable/positive"
+                            android:contentDescription="@string/have_a_positive_attitude_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="A positive attitude \nwill help you think of \nwhat you are doing \nas important, which \nis a great way to \nstay motivated and \nworking toward a \ngoal."
+                            android:text="@string/have_a_positive_attitude"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_gravity="center">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center|start"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|start"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -475,7 +482,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Never Quit"
+                            android:text="@string/never_quit_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -484,27 +491,29 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="10dp"
-                            android:src="@drawable/quit" />
+                            android:src="@drawable/quit"
+                            android:contentDescription="@string/never_quit_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="High achievers are \ntenacious, sticking to \ntheir plans and goals \nas long as they need \nto in order to get \nwhere they want to be."
+                            android:text="@string/never_quit_desc"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
-                    android:layout_gravity="center|right"
-                    android:layout_margin="12dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
                     android:elevation="6dp"
                     app:cardCornerRadius="12dp">
 
@@ -512,7 +521,7 @@
                         android:id="@+id/card10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_gravity="center|right"
+                        android:layout_gravity="center|end"
                         android:background="#FFFFFF"
                         android:gravity="center"
                         android:orientation="vertical"
@@ -522,7 +531,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Erase out anxieties \nand stress-causing \nworries. "
+                            android:text="@string/erase_anxiety_title"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -531,19 +540,26 @@
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:padding="0dp"
-                            android:src="@drawable/stress" />
+                            android:src="@drawable/stress"
+                            android:contentDescription="@string/erase_anxiety_icon"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Wipeout all the stress-causing \ntriggers from \nthe mind."
+                            android:text="@string/erase_anxiety_desc"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             android:textStyle="italic" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
             </TableRow>
+
         </TableLayout>
+
     </LinearLayout>
+
 </ScrollView>
