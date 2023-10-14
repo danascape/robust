@@ -22,11 +22,12 @@ import dev.dsi.robust.utils.SwipeToDeleteCallback
 
 
 class FridgeFragment : Fragment() {
+
     private lateinit var fridgeViewModel: FridgeViewModel
     lateinit var fridgeAdapter: FridgeAdapter
+
     private var _binding: FragmentFridgeBinding? = null
-    private val binding
-        get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -85,4 +86,10 @@ class FridgeFragment : Fragment() {
         val itemTouchhelper = ItemTouchHelper(swipeToDeleteCallback)
         itemTouchhelper.attachToRecyclerView(binding.rv)
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }

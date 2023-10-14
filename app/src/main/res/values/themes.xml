@@ -2,15 +2,21 @@
     <!-- Base application theme. -->
     <style name="Theme.Robust" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/lightMain</item>
-        <item name="colorPrimaryVariant">@color/material_blue</item>
+        <item name="colorPrimary">@color/material_blue</item>
+        <item name="colorPrimaryDark">@color/blueMain</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/material_blue</item>
         <item name="colorSecondaryVariant">@color/lightMain</item>
         <item name="colorOnSecondary">@color/dark</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyToolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
 </resources>

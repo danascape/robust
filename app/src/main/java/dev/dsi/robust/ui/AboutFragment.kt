@@ -11,16 +11,10 @@ import android.widget.Toast
 import dev.dsi.robust.R
 import dev.dsi.robust.databinding.FragmentAboutBinding
 
-
 class AboutFragment : Fragment() {
+
     private var _binding: FragmentAboutBinding? = null
-    private val binding
-    get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,9 +22,6 @@ class AboutFragment : Fragment() {
     ): View? {
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
 
-        binding.toolbarDashboardFridge.setNavigationOnClickListener {
-            activity?.onBackPressed()
-        }
         //Madhur
         binding.textGithubOne.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
@@ -100,6 +91,11 @@ class AboutFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

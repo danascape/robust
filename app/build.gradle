@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "dev.dsi.robust"
-        minSdk 26
+        minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"

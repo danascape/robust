@@ -13,26 +13,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayoutAbout"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@color/material_blue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:id="@+id/appBarLayoutAbout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:background="@color/material_blue"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/toolbarDashboardFridge"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:navigationIcon="?attr/homeAsUpIndicator"
-                app:title="Tips"
-                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
-                app:titleTextColor="@color/white" />
+<!--            <com.google.android.material.appbar.MaterialToolbar-->
+<!--                android:id="@+id/toolbarDashboardFridge"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--                app:navigationIcon="?attr/homeAsUpIndicator"-->
+<!--                app:title="Tips"-->
+<!--                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--                app:titleTextColor="@color/white" />-->
 
-        </com.google.android.material.appbar.AppBarLayout>
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
 
         <TableLayout
             android:layout_width="match_parent"

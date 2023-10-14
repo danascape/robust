@@ -6,21 +6,18 @@
         android:id="@+id/fridgeFragment"
         android:title="@string/fridge"
         android:icon="@drawable/fridge_icon"
-        android:iconTint="@color/black"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/tipsFragment"
         android:title="@string/tips"
         android:icon="@drawable/tips_icon"
-        android:iconTint="@color/black"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/aboutFragment"
         android:title="@string/about"
         android:icon="@drawable/about_icon"
-        android:iconTint="@color/black"
         app:showAsAction="ifRoom"/>
 
 </menu>

@@ -18,12 +18,11 @@ import dev.dsi.robust.utils.Snacker
 import java.text.SimpleDateFormat
 import java.util.*
 
-@Suppress("DEPRECATION")
 class AddItemFragment : Fragment() {
+
     private lateinit var fridgeViewmodel: FridgeViewModel
     private var _binding: FragmentAddItemBinding? = null
-    private val binding
-        get() = _binding!!
+    private val binding get() = _binding!!
 
     var cal = Calendar.getInstance()
 
@@ -33,13 +32,6 @@ class AddItemFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentAddItemBinding.inflate(inflater, container, false)
-
-        binding.toolbarDashboardFridge.setNavigationOnClickListener {
-            activity?.onBackPressed()
-        }
-
-
-
 
             fun updateDateInView() {
                 val myFormat = "MM/dd/yyyy"
@@ -111,5 +103,9 @@ class AddItemFragment : Fragment() {
         return binding.root
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
 }
