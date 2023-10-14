@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="20dp"
-    android:layout_marginTop="15dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp"
     android:elevation="16dp"
     android:padding="5dp"
     app:cardCornerRadius="10dp">
@@ -16,13 +17,10 @@
         android:layout_height="wrap_content"
         android:padding="15dp">
 
-
         <LinearLayout
             android:id="@+id/ll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:foregroundGravity="center"
@@ -33,7 +31,8 @@
                 android:id="@+id/increment"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_keyboard_arrow_up_24" />
+                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                android:contentDescription="@string/increment_button"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -47,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:fontFamily="@font/sofiaprosoftregular"
-                    android:text="0"
+                    android:text="@string/start_value"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -58,25 +57,24 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="4dp"
+                android:contentDescription="@string/decrement_button"
                 android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/product_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/expiry"
-                android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/sofiaprosoftbold"
-                android:text="Butter"
+                tools:text="Butter"
                 android:textColor="#292929"
                 android:textSize="28sp" />
 
@@ -88,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/sofiaprosoftmedium"
-                    android:text="Expiry: "
+                    android:text="@string/expiry"
                     android:textColor="#494949"
                     android:textSize="16sp" />
 
@@ -96,7 +94,6 @@
                     android:id="@+id/expiry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/product_name"
                     android:fontFamily="@font/sofiaprosoftmedium"
                     android:textColor="#494949"
                     android:textSize="16sp" />
@@ -109,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="13dp"
             app:strokeColor="#6082FF"
@@ -119,14 +116,14 @@
                 android:id="@+id/tag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="#8CDCFF"
                 android:fontFamily="@font/sofiaprosoftmedium"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="3dp"
-                android:layout_gravity="center"
                 android:foregroundGravity="center"
                 android:gravity="center"
-                android:text="dairy"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3dp"
+                tools:text="dairy"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 

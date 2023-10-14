@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayoutFridge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:background="@color/material_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:navigationIcon="?attr/homeAsUpIndicator"
             app:title="Add your item"
-            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
             app:titleTextColor="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -33,12 +33,11 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addHeading"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="16dp"
         android:forceDarkAllowed="false"
-        android:hint="Add an item"
+        android:hint="@string/add_an_item"
         app:hintTextColor="@color/dark">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -64,8 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_below="@+id/addHeading"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="30dp"
             android:backgroundTint="@color/material_red"
             android:textAlignment="center"
@@ -90,12 +88,11 @@
             android:layout_width="150dp"
             android:layout_weight="4"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/addHeading"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="32dp"
+            android:layout_marginEnd="16dp"
             android:forceDarkAllowed="false"
-            android:hint="Quantity in units"
+            android:hint="@string/quantity_in_units"
             app:hintTextColor="@color/dark">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -116,7 +113,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="#EBFFEB"
         app:cardCornerRadius="10dp">
@@ -141,6 +138,7 @@
         android:backgroundTint="@color/ColorFabRed"
         android:src="@drawable/ic_baseline_check_24"
         app:rippleColor="#FFA3A3"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        android:contentDescription="@string/add_button" />
 
 </LinearLayout>
