@@ -3,10 +3,8 @@ package dev.dsi.robust.fridge.Database
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
+import androidx.lifecycle.ViewModel
+import kotlinx.coroutines.*
 
 class FridgeViewModel(application: Application) : AndroidViewModel(Application()) {
 
