@@ -65,8 +65,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:orientation="vertical">
+            android:layout_marginStart="24dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/product_name"
@@ -106,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="24dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="13dp"
             app:strokeColor="#6082FF"
