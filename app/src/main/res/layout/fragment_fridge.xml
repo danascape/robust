@@ -6,27 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.FridgeFragment">
-
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:id="@+id/appBarLayoutFridge"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="56dp"-->
-<!--        android:background="@color/material_blue"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-<!--        <com.google.android.material.appbar.MaterialToolbar-->
-<!--            android:id="@+id/toolbarDashboardFridge"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
-<!--            app:title="Fridge"-->
-<!--            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"-->
-<!--            app:titleTextColor="@color/white" />-->
-
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
-
+  
     <RelativeLayout
         android:id="@+id/anim"
         android:layout_width="match_parent"
