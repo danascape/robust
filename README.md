@@ -1,22 +1,30 @@
+# About - Robust 🌟
+It is an android app that is primarily used for making shopping list focused on grocery items mainly.
 
-### IMAGES
+[![app-banner.png](https://i.postimg.cc/przTsjmr/app-banner.png)](https://postimg.cc/D4fnZ8d3)
 
-<table>
-   <tr>
-    <td><img src="https://user-images.githubusercontent.com/77199373/166935339-066bf8b6-1424-4518-8d95-050861b5ee60.png"></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/77199373/166935357-bbdaba62-982d-47bc-a2a4-0707602393c5.png" width=360 height=720></td>
-    </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/77199373/166935380-362e81f2-e399-4a8e-878e-c2909d4c1176.png" width=360 height=720></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/77199373/166935384-e9c6d906-6c84-46e6-af43-d5cb9e9b79dc.png" width=360 height=720></td>
-    </tr>
-  <tr>  
-  <td><img src="https://user-images.githubusercontent.com/77199373/166935392-bb1c48b6-3076-4433-b165-0bbe490c60b8.png" width=360 height=720></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/77199373/166935399-28fcb393-e9c7-4ec8-b6bf-f2018ded66c4.png" width=360 height=720></td>
- </tr>
+## App Screenshots ✨
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+| ------------ | ------------ | ------------ |
+| [![s1.png](https://i.postimg.cc/Kvbt3PpR/s1.png)](https://postimg.cc/dDWhzyYY) | [![s2.png](https://i.postimg.cc/c4TtKV8b/s2.png)](https://postimg.cc/jLwSm3cH) | [![s3.png](https://i.postimg.cc/0jnjwwrw/s3.png)](https://postimg.cc/JHyRwtNr) |
+| [![s4.png](https://i.postimg.cc/PrNT4cRc/s4.png)](https://postimg.cc/Tp8z2kGq) |  [![s5.png](https://i.postimg.cc/DytkczsJ/s5.png)](https://postimg.cc/crMbx0F0) |
+
+## Contribution 🤝
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and
+create. Any contributions you make are greatly appreciated 💛.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull
+request. You can also simply open an issue with the tag "enhancement". Don't forget to give the
+project a star! Thanks again!
+
+<ol>
+    <li>Fork the Project</li>
+    <li>Create your Feature Branch (git checkout -b feature/AmazingFeature)</li>
+    <li>Commit your Changes (git commit -m 'Add some AmazingFeature')</li>
+    <li>Push to the Branch (git push origin feature/AmazingFeature)</li>
+    <li>Open a Pull Request</li>
+</ol>
+
+## Find this project useful ? ❤️
+Support it by clicking the ⭐️ button on the upper right of this page. ✌️
