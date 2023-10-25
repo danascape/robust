@@ -11,16 +11,10 @@ import android.widget.Toast
 import dev.dsi.robust.R
 import dev.dsi.robust.databinding.FragmentAboutBinding
 
-
 class AboutFragment : Fragment() {
+
     private var _binding: FragmentAboutBinding? = null
-    private val binding
-    get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,65 +22,67 @@ class AboutFragment : Fragment() {
     ): View? {
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
 
-        binding.toolbarDashboardFridge.setNavigationOnClickListener {
-            activity?.onBackPressed()
-        }
         //Madhur
         binding.textGithubOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/madhurmehta007")
             startActivity(openURL)
         }
+
         binding.textLinkedInOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/madhurmehta007/")
             startActivity(openURL)
         }
 
         //Debayan
         binding.textGithubTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/debz-g")
             startActivity(openURL)
         }
+
         binding.textLinkedInTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/debzexe/")
             startActivity(openURL)
         }
 
         //Saalim
         binding.textGithubThree.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/danascape")
             startActivity(openURL)
         }
+
         binding.textLinkedInThree.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/saalim-quadri/")
             startActivity(openURL)
         }
 
         //Manasvi
         binding.textGithubFour.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://github.com/Manasvikashyap")
             startActivity(openURL)
         }
+
         binding.textGmailOne.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("mailto:manasvigk03@gmail.com")
             startActivity(openURL)
         }
 
         //Joyeeta
         binding.textGMailTwo.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("mailto:joyeeta2811.bais@gmail.com")
             startActivity(openURL)
         }
+
         binding.textLinkedInFive.setOnClickListener {
-            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("https://www.linkedin.com/in/joyeeta-bais-722727231")
             startActivity(openURL)
         }
@@ -95,11 +91,17 @@ class AboutFragment : Fragment() {
         binding.textGithub4.setOnClickListener {
             Toast.makeText(requireContext(),"Not yet updated", Toast.LENGTH_SHORT).show()
         }
+
         binding.textLinkedIn4.setOnClickListener {
             Toast.makeText(requireContext(),"Not yet updated", Toast.LENGTH_SHORT).show()
         }
 
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

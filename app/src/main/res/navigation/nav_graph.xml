@@ -8,54 +8,33 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="dev.dsi.robust.ui.AboutFragment"
-        android:label="AboutFragment"
-        tools:layout="@layout/fragment_about">
-        <action
-            android:id="@+id/action_aboutFragment_to_fridgeFragment"
-            app:destination="@id/fridgeFragment"
-            app:popUpTo="@id/fridgeFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        android:label="About"
+        tools:layout="@layout/fragment_about"/>
     <fragment
         android:id="@+id/tipsFragment"
         android:name="dev.dsi.robust.ui.TipsFragment"
-        android:label="TipsFragment"
-        tools:layout="@layout/fragment_tips">
-        <action
-            android:id="@+id/action_tipsFragment_to_fridgeFragment"
-            app:destination="@id/fridgeFragment"
-            app:popUpTo="@id/fridgeFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        android:label="Tips"
+        tools:layout="@layout/fragment_tips"/>
     <fragment
         android:id="@+id/fridgeFragment"
         android:name="dev.dsi.robust.ui.FridgeFragment"
-        android:label="FridgeFragment"
+        android:label="Home"
         tools:layout="@layout/fragment_fridge">
         <action
             android:id="@+id/action_fridgeFragment_to_addItemFragment"
-            app:destination="@+id/addItemFragment"
-            app:popUpTo="@id/addItemFragment" />
-        <action
-            android:id="@+id/action_fridgeFragment_to_tipsFragment"
-            app:destination="@id/tipsFragment"
-            app:popUpTo="@id/tipsFragment" />
-        <action
-            android:id="@+id/action_fridgeFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment"
-            app:popUpTo="@id/aboutFragment" />
+            app:destination="@id/addItemFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/addItemFragment"
         android:name="dev.dsi.robust.ui.AddItemFragment"
-        android:label="AddItemFragment"
+        android:label="Add Item"
         tools:layout="@layout/fragment_add_item">
         <action
             android:id="@+id/action_addItemFragment_to_fridgeFragment"
-            app:destination="@+id/fridgeFragment"
+            app:destination="@id/fridgeFragment"
             app:popUpTo="@id/fridgeFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
     </fragment>
 
 </navigation>
